@@ -1,0 +1,18 @@
+# שלב 1: בחירת תמונת בסיס קלה (Slim) כדי שה-Image יהיה קטן
+FROM python:3.9-slim
+
+# שלב 2: הגדרת תיקיית עבודה בתוך הקונטיינר
+WORKDIR /app
+
+# שלב 3: העתקת קובץ הדרישות והתקנתו (לפני שאר הקוד - לטובת Caching)
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# שלב 4: העתקת כל שאר קבצי הפרויקט לתיקיית העבודה
+COPY . .
+
+# שלב 5: חשיפת הפורט שהאפליקציה רצה עליו
+EXPOSE 5000
+
+# שלב 6: הפקודה שמריצה את האפליקציה
+CMD ["python", "app.py"]

@@ -1,0 +1,4 @@
+[20/Feb/2026:13:34:37 +0000] - "GET https://links.sonatype.com/products/nexus/outreach/community/3.89.1-02/he/admin HTTP/1.1" 302 -1 681 --- [pool-4-thread-1]
+[20/Feb/2026:13:34:38 +0000] - "GET https://download.sonatype.com/nexus/outreach/community-en-all-admin.zip HTTP/1.1" 302 138 838 --- [pool-4-thread-1]
+[20/Feb/2026:13:53:10 +0000] - "GET https://links.sonatype.com/products/nexus/outreach/community/3.89.1-02/he/anonymous HTTP/1.1" 302 -1 690 --- [pool-4-thread-1]
+[20/Feb/2026:13:53:11 +0000] - "GET https://download.sonatype.com/nexus/outreach/community-en-all-anonymous.zip HTTP/1.1" 302 138 822 --- [pool-4-thread-1]
